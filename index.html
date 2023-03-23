@@ -29,64 +29,96 @@
     <!-- favicône de base -->
     <link rel="shortcut icon" href="https://developer.mozilla.org/static/img/favicon32.png">
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="mon_fichier_css.css">
 
     <title>FANO : Développeur web freelance</title>
+
+    <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+          HTML5 fonctionne correctement avec les anciennes versions de
+          Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="apropos.html">A propos</a></li>
-      <li><a href="projets/index.html">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    
+    <header>
+      <h1>@FANO : Développeur web <span style="font-size: 32px; margin: 21px 0;">freelance</span></h1>
+      <p>Ma devise : <i class="latin">Veni, vidi, vici</i></p>
+    </header>
 
-    <h1>@FANO : Développeur web <span style="font-size: 32px; margin: 21px 0;">freelance</span></h1>
-    <p>Ma devise : <i class="latin">Veni, vidi, vici</i></p>
-    <p class="content">Si vous cherchez un <strong>développeur web freelance</strong>, vous êtes au bon endroit ! Je suis un expert dans la création de sites Web modernes et dynamiques. J'ai des compétences en HTML, CSS, JavaScript, PHP et d'autres langages de programmation. Je suis également expérimenté dans l'utilisation de divers CMS, tels que WordPress et Drupal, ainsi que dans la création d'applications web personnalisées. Je suis passionné par la technologie et j'aime travailler avec mes clients pour créer des sites Web qui répondent à leurs besoins. Je suis à l'écoute de mes clients et je m'assure de comprendre leurs objectifs et leur vision pour leur site Web. Je suis capable de travailler en équipe avec d'autres professionnels tels que des graphistes et des rédacteurs pour créer un site Web cohérent et attractif. Si vous cherchez un développeur web freelance compétent et fiable, contactez-moi dès maintenant ! Vous pouvez me trouver sur mon site Web personnel à l'adresse suivante : <a href="https://github.com/FANO-OFFICIAL" title="Lien github de FANO" target="_blank">FANO-OFFICIAL</a>.</p>
-    
-    <img src="https://avatars.githubusercontent.com/u/121119011?v=4" alt="Avatar de FANO">
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">A propos</a></li>
+        <li><a href="projets/index.html">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    
-    <h2>Formations</h2>
-    <ol>
-      <li>Roulez jusqu'au bout de la route</li>
-      <li>Tournez à droite</li>
-      <li>Allez tout droit aux deux premiers ronds-points</li>
-      <li>Tournez à gauche au troisième rond-point</li>
-      <li>Roulez sur 300 mètres, l'école est sur votre droite</li>
-    </ol>
-    <h3>Projets</h3>
-    <ul>
-      <li>lait</li>
-      <li>œufs</li>
-      <li>pain</li>
-      <li>houmous</li>
-    </ul>
-    <h4>Compétences</h4>
-    <dl>
-      <dt><abbr title="Hypertext Markup Language">HTML</abbr></dt>
-      <dd>Dans une pièce de théâtre, action d'un acteur adressant à lui-même ses pensées ou sentiments intimes et, de la sorte, les faisant partager à son auditoire (mais pas aux autres personnages de la pièce).</dd>
-      <dt>CSS</dt>
-      <dd>Dans une pièce de théâtre, action d'un acteur partageant ses pensées à haute voix avec le public et tous les personnages présents.</dd>
-      <dt>JavaScript</dt>
-      <dd>Dans une pièce de théâtre, action d'un acteur partageant une tirade uniquement avec le public en vue de produire un effet dramatique ou humoristique. Il s'agit le plus souvent d'un sentiment, d'une pensée secrète ou d'une information sur le contexte.</dd>
-      <dt>PHP</dt>
-      <dd>Dans une pièce de théâtre, action d'un acteur partageant une tirade uniquement avec le public en vue de produire un effet dramatique ou humoristique. Il s'agit le plus souvent d'un sentiment, d'une pensée secrète ou d'une information sur le contexte.</dd>
-    </dl>
+        <!-- Un formulaire de recherche est une autre façon de naviguer de
+            façon non‑linéaire dans un site. -->
 
-    <h5>Liens utiles</h5>
-    <h6 id="contact">Contact</h6>
-    <p><b>Me contacer</b> : <a href="mailto:fanoentreprise@gmail.com"><em>fanoentreprise@gmail.com</em></a></p>
-    <p><a href="pdfs/fichier.pdf">Télécharger mon CV(PDF, 155 Ko)</a>.</p>
+        <form>
+          <input type="search" name="q" placeholder="Rechercher">
+          <input type="submit" value="Lancer !">
+        </form>
+      </nav>
 
-    
+    <!-- Ici nous mettons le contenu de la page -->
+    <main>
 
-    <address>
-      <p>Page écrite par <a href="https://github.com/FANO-OFFICIAL">FANO</a>.</p>
-      <p>Dernière mise à jour : le <time datetime="2023-03-23">23 mars 2023</time></p>
-    </address>
+      <!-- Il contient un article -->
+      <article>
+        <h2>A propos de moi</h2>
+        <img src="https://avatars.githubusercontent.com/u/121119011?v=4" alt="Avatar de FANO">
+        <p class="content">Si vous cherchez un <strong>développeur web freelance</strong>, vous êtes au bon endroit ! Je suis un expert dans la création de sites Web modernes et dynamiques. J'ai des compétences en HTML, CSS, JavaScript, PHP et d'autres langages de programmation. Je suis également expérimenté dans l'utilisation de divers CMS, tels que WordPress et Drupal, ainsi que dans la création d'applications web personnalisées. Je suis passionné par la technologie et j'aime travailler avec mes clients pour créer des sites Web qui répondent à leurs besoins. Je suis à l'écoute de mes clients et je m'assure de comprendre leurs objectifs et leur vision pour leur site Web. Je suis capable de travailler en équipe avec d'autres professionnels tels que des graphistes et des rédacteurs pour créer un site Web cohérent et attractif. Si vous cherchez un développeur web freelance compétent et fiable, contactez-moi dès maintenant ! Vous pouvez me trouver sur mon site Web personnel à l'adresse suivante : <a href="https://github.com/FANO-OFFICIAL" title="Lien github de FANO" target="_blank">FANO-OFFICIAL</a>.</p>
+        <hr>
+        <h3>Formations</h3>
+        <ol>
+          <li>Roulez jusqu'au bout de la route</li>
+          <li>Tournez à droite</li>
+          <li>Allez tout droit aux deux premiers ronds-points</li>
+          <li>Tournez à gauche au troisième rond-point</li>
+          <li>Roulez sur 300 mètres, l'école est sur votre droite</li>
+        </ol>
+        <hr>
+        <h3>Projets</h3>
+        <ul>
+          <li>lait</li>
+          <li>œufs</li>
+          <li>pain</li>
+          <li>houmous</li>
+        </ul>
+      </article>
+
+      <!-- Le contenu « à côté » peut aussi être intégré dans le contenu
+            principal -->
+      <aside>
+        <h2>Compétences</h2>
+        <dl>
+          <dt><abbr title="Hypertext Markup Language">HTML</abbr></dt>
+          <dd>Dans une pièce de théâtre, action d'un acteur adressant à lui-même ses pensées ou sentiments intimes et, de la sorte, les faisant partager à son auditoire (mais pas aux autres personnages de la pièce).</dd>
+          <dt>CSS</dt>
+          <dd>Dans une pièce de théâtre, action d'un acteur partageant ses pensées à haute voix avec le public et tous les personnages présents.</dd>
+          <dt>JavaScript</dt>
+          <dd>Dans une pièce de théâtre, action d'un acteur partageant une tirade uniquement avec le public en vue de produire un effet dramatique ou humoristique. Il s'agit le plus souvent d'un sentiment, d'une pensée secrète ou d'une information sur le contexte.</dd>
+          <dt>PHP</dt>
+          <dd>Dans une pièce de théâtre, action d'un acteur partageant une tirade uniquement avec le public en vue de produire un effet dramatique ou humoristique. Il s'agit le plus souvent d'un sentiment, d'une pensée secrète ou d'une information sur le contexte.</dd>
+        </dl>
+      </aside>
+
+    </main>
+
+    <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
+    <footer id="contact">
+      <p><b>Me contacer</b> : <a href="mailto:fanoentreprise@gmail.com"><em>fanoentreprise@gmail.com</em></a></p>
+      <p><a href="pdfs/fichier.pdf">Télécharger mon CV(PDF, 155 Ko)</a>.</p>
+      <address>
+        <p>Page écrite par <a href="https://github.com/FANO-OFFICIAL">FANO</a>.</p>
+        <p>Dernière mise à jour : le <time datetime="2023-03-23">23 mars 2023</time></p>
+      </address>
+      <p>©Copyright 2023. Tous droits reversés.</p>
+    </footer>
 
 
 
